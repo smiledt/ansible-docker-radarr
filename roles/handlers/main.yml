@@ -1,0 +1,8 @@
+---
+# handlers file for radarr_docker
+
+- name: Restart Radarr
+  docker_container:
+    name: "{{ radarr_name }}"
+    state: started
+    restart: true

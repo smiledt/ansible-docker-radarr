@@ -1,0 +1,24 @@
+---
+# defaults file for radarr_docker
+
+radarr_name: radarr
+radarr_image: linuxserver/radarr
+radarr_ports:
+  - 7878:7878
+  - 8787:8787
+radarr_config_directory: /opt/radarr
+radarr_movie_directory: /mnt/media/movies
+radarr_download_directory: /mnt/media/downloads                                                                       
+radarr_environment_variables:
+  PUID: "1000"
+  PGID: "1000"
+  TZ: America/Chicago
+
+radarr_docker_additional_options:
+  restart_policy: unless-stopped
+
+radarr_config:
+  ApiKey: "abc123"
+  UrlBase: "example.com"
+  LaunchBrowser: "False"
+  AnalyticsEnabled: "False"
