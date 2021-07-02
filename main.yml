@@ -1,3 +1,4 @@
+---
 # This playbook deploys a Radarr docker container on a docker host.
 
 - name: Deploy the Radarr Container.

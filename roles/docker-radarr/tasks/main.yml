@@ -1,10 +1,12 @@
 ---
-# tasks file for radarr_docker
+# tasks file for docker-radarr
 
 - name: Create Radarr directories
   file:
     path: "{{ item }}"
     state: directory
+    owner: "{{ media_user }}"
+    group: "{{ media_group }}"
     mode: 0777
   loop:
     - "{{ radarr_config_directory }}"
