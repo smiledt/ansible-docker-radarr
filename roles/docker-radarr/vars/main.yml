@@ -10,8 +10,8 @@ radarr_config_directory: /opt/radarr
 radarr_movie_directory: /mnt/media/movies
 radarr_download_directory: /mnt/media/downloads                                                                       
 radarr_environment_variables:
-  PUID: '"{{ media_uid }}"'
-  PGID: '"{{ media_gid }}"'
+  PUID: "{{ media_uid }}"
+  PGID: "{{ media_gid }}"
   TZ: America/Chicago
 
 radarr_docker_additional_options:
@@ -24,6 +24,6 @@ radarr_config:
   AnalyticsEnabled: "False"
 
 media_user: mediasvc
-media_uid: 1099
+media_uid: "1099"
 media_group: media
-media_gid: 1099
+media_gid: "1099"
