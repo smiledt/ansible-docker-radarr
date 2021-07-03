@@ -1,6 +1,6 @@
 ---
 # vars file for radarr_docker
----
+
 radarr_name: radarr
 radarr_image: linuxserver/radarr
 radarr_ports:
