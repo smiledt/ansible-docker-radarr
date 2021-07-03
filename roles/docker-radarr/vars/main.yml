@@ -10,8 +10,8 @@ radarr_config_directory: /opt/radarr
 radarr_movie_directory: /mnt/media/movies
 radarr_download_directory: /mnt/media/downloads                                                                       
 radarr_environment_variables:
-  PUID: "{{ media_uid }}"
-  PGID: "{{ media_gid }}"
+  PUID: '"{{ media_uid }}"'
+  PGID: '"{{ media_gid }}"'
   TZ: America/Chicago
 
 radarr_docker_additional_options:
