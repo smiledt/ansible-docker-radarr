@@ -5,6 +5,7 @@
 *.retry
 test.yml
 .ansible
+vars/
 
 
 ### Python ###
@@ -126,9 +127,6 @@ pythonenv*
 # Spyder project settings
 .spyderproject
 .spyproject
-
-# Rope project settings
-.ropeproject
 
 # mkdocs documentation
 /site
