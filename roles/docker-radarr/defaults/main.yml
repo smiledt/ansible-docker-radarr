@@ -8,7 +8,7 @@ radarr_ports:
   - 8787:8787
 radarr_config_directory: /opt/radarr
 radarr_movie_directory: /mnt/media/movies
-radarr_download_directory: /mnt/media/downloads                                                                       
+radarr_download_directory: /mnt/media/downloads
 radarr_environment_variables:
   PUID: "1000"
   PGID: "1000"
